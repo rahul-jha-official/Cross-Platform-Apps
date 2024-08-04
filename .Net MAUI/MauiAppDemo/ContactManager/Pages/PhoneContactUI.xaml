@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactManager.Pages.PhoneContactUI"
+             Title="PhoneContactUI">
+    <VerticalStackLayout Spacing="10">
+        <HorizontalStackLayout>
+            <SearchBar 
+                Placeholder ="Search By Name or Number"
+                TextChanged="SearchContact"
+                WidthRequest="280"/>
+
+            <Button Text="Create Contact" Clicked="CreateContact" Margin="5, 5, 5, 5"/>
+        </HorizontalStackLayout>
+        
+
+        
+
+        <ListView x:Name="listContacts" ItemTapped="ItemTapped" ItemSelected="ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding PhoneNumber}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </VerticalStackLayout>
+</ContentPage>

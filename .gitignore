@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.Net MAUI/MauiAppDemo/.vs
+/.Net MAUI/MauiAppDemo/ContactManager/bin/Debug
+/.Net MAUI/MauiAppDemo/ContactManager/obj
+/.Net MAUI/MauiAppDemo/TestApp/bin/Debug
+/.Net MAUI/MauiAppDemo/TestApp/obj
